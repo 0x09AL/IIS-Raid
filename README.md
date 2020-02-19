@@ -39,7 +39,7 @@ The PASSWORD definition is the password that will be used to authenticate to the
 
 ## More info
 
-For more information refer to https://mdsec.co.uk/blog/
+For more information refer to https://www.mdsec.co.uk/2020/02/iis-raid-backdooring-iis-using-native-modules/
 
 ### Demo Video
 
