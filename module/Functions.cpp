@@ -108,7 +108,11 @@ VOID InjectShellcode(OUT LPVOID lpOutputData, IN LPVOID lpInputData) {
 
 	GetThreadContext(pi.hThread, &ctx);
 
+#ifdef _WIN64
 	ctx.Rip = (DWORD64)lpShellcode;
+#else
+	ctx.Eip = (DWORD32)lpShellcode;
+#endif
 
 	SetThreadContext(pi.hThread, &ctx);
 	ResumeThread(pi.hThread);
